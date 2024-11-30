@@ -1,0 +1,140 @@
+/* Add Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-banner {
+    background-color: #113861;
+    padding: 24px 32px;
+    margin-bottom: 30px;
+}
+
+.top-banner h2 {
+    color: white;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.explore-btn {
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 8px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: white;
+    color: #0B2A4A;
+}
+
+.service-card {
+    padding: 48px;
+    border-radius: 16px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0.05) 10px,
+        transparent 10px,
+        transparent 15px
+    );
+}
+
+.loan-card {
+    background-color: #2266A4;
+}
+
+.credit-card {
+    background-color: #167054;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.service-card p.category {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.service-card h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 16px 0;
+}
+
+.service-card p.description {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.learn-more {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.learn-more::after {
+    content: '→';
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover {
+    color: white;
+}
+
+.learn-more:hover::after {
+    transform: translateX(4px);
+}
+
+/* Add these new responsive styles */
+@media (max-width: 575.98px) {
+    .top-banner {
+        padding: 20px;
+    }
+
+    .top-banner h2 {
+        font-size: 20px;
+    }
+
+    .explore-btn {
+        margin-top: 16px;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .service-card h2 {
+        font-size: 20px;
+    }
+}
